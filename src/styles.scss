@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.tooltip{
+  position: absolute;
+  background: #333;
+  top: -29px;
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 13px;
+  color: #fff;
+
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  margin-left: -12px;
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  transform: rotate(180deg);
+}
